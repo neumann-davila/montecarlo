@@ -7,6 +7,12 @@ MonteCarlo
 
 Python package for CHEM 3684
 
+This repository is currently under development. To do installation in development mode, download this repository and type
+
+`pip install -e .`
+
+in the repository directory.
+
 ### Copyright
 
 Copyright (c) 2025, Neumann Davila
