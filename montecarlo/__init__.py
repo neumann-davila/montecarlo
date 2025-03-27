@@ -2,6 +2,6 @@
 
 # Add imports here
 from .functions import *
-
-
+from .bitString import BitString
+from .isingHamiltonian import IsingHamiltonian
 from ._version import __version__
