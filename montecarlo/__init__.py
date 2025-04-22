@@ -4,4 +4,6 @@
 from .functions import *
 from .bitString import BitString
 from .isingHamiltonian import IsingHamiltonian
+from .montecarlo import MonteCarlo
+
 from ._version import __version__

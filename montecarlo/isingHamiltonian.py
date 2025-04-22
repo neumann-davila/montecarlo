@@ -10,7 +10,6 @@ class IsingHamiltonian:
 
     def set_mu(self, mus: np.array):
         self.mus = mus
-
         return self
 
 
