@@ -6,10 +6,12 @@ import numpy as np
 class IsingHamiltonian:
     def __init__(self, G):
         self.G = G
-        self.mus = np.array([0 for i in range(len(self.G))])
+        self.J = G
+        self.N = len(G)
+        self.mu = np.array([0 for i in range(len(self.G))])
 
     def set_mu(self, mus: np.array):
-        self.mus = mus
+        self.mu = mus
         return self
 
 
@@ -42,9 +44,9 @@ class IsingHamiltonian:
                     total_energy += -1 * A[i][j]
             
             if bs.config[i] == 1:
-                total_energy += self.mus[i]
+                total_energy += self.mu[i]
             else:
-                total_energy += -1 * self.mus[i]
+                total_energy += -1 * self.mu[i]
         return total_energy
     
     def compute_average_values(self, T: float):

@@ -8,7 +8,7 @@ class MonteCarlo:
     self.ham = ham
 
   def run(self, T, n_samples, n_burn):
-    bitstring = bs.BitString(len(self.ham.G))
+    bitstring = bs.BitString(len(self.ham.J))
     samples = n_samples + 1
     E = [0] * samples
     M = [0] * samples
